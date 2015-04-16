@@ -48,5 +48,37 @@ public class Delivery extends JFrame
 		sizeGroup.add(large);
 
 		mainPanel.add(sizePanel);
+
+		JPanel upperPanel = new JPanel();
+
+		Border b2 = BorderFactory.createTitledBorder("Product");
+
+		upperPanel.setBorder(b2);
+
+		burger = new JCheckBox("Some Burger");
+		ak47 = new JCheckBox("AK-47, for those who like efficiency");
+		m16 = new JCheckBox("M16, for the gentlemen with fine taste");
+		hipsterShirt = new JCheckBox("Nothing says 'I am a NY well-informed lefty' like a 'Che Guevara in Starbucks' shirt");
+
+		upperPanel.add(burger);
+		upperPanel.add(ak47);
+		upperPanel.add(m16);
+		upperPanel.add(hipsterShirt);
+
+		mainPanel.add(upperPanel);
+
+		buttonOK = new JButton("BRING ME MY ORDER");
+		buttonOK.addActionListener(e -> buttonOKClick() );
+
+		mainPanel.add(buttonOK);
+
+		this.add(mainPanel);
+		this.setVisible(true);
+
+	}
+
+	public void buttonOKClick()
+	{
+		
 	}
 }
