@@ -8,4 +8,18 @@ public class Delivery extends JFrame
 	{
 		new Delivery();
 	}
+
+	private JButton buttonOK;
+	private JRadioButton small;
+	private JRadioButton medium;
+	private JRadioButton large;
+	private JCheckBox burger;
+	private JCheckBox ak47;
+	private JCheckBox m16;
+	private JCheckBox hipsterShirt;
+
+	public Product()
+	{
+		
+	}
 }
